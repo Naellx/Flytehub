@@ -13,7 +13,7 @@ return function(Window, CustomIconUrl)
     -- [ðŸŽ¨ CONFIGURATION]
     -- Masukkan URL Gambar (https://...) atau rbxassetid:// di bawah ini.
     -- Jika kamu mengirim URL dari script pemanggil: result(Window, "https://link.com/gambar.png") maka prioritas CustomIconUrl.
-    local TargetIconURL = CustomIconUrl or "https://syshub.site/img/syshubwithbg.png" 
+    local TargetIconURL = CustomIconUrl or "https://raw.githubusercontent.com/Naellx/Flytehub/refs/heads/main/044af82337793fc1493d881ca7be1fc6.webp" 
 
     -- Variables
     local uisConnection = nil
@@ -55,7 +55,7 @@ return function(Window, CustomIconUrl)
                 -- Load gambar dari file lokal
                 return getasset(fileName)
             else
-                warn("[SysHub] Executor kamu tidak mensupport 'getcustomasset'. Menggunakan icon default.")
+                warn("[flyteHub] Executor kamu tidak mensupport 'getcustomasset'. Menggunakan icon default.")
                 return defaultIcon
             end
         end
